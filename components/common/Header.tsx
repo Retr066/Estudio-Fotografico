@@ -6,8 +6,8 @@ import styles from "../../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
-export default React.forwardRef(function Header() {
+
+export default function Header() {
   const router = useRouter();
   return (
     <header>
@@ -151,4 +151,4 @@ export default React.forwardRef(function Header() {
       </nav>
     </header>
   );
-});
+}
