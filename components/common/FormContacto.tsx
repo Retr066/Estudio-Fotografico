@@ -21,7 +21,9 @@ export default function FormContacto() {
     fetch("api/email", {
       method: "post",
       body: JSON.stringify(mensaje),
-    });
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   };
   return (
     <>
